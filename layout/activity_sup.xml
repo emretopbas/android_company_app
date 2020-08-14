@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_height="fill_parent">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/applelogo"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:text="Enter Your Name"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etName"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Enter Your Name"/>
+            <TextView
+                android:text="Enter Your E-mail"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Enter Your E-mail"/>
+            <TextView
+                android:text="Enter Your Phone Number"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:hint="Enter Your Phone Number"
+                android:singleLine="true"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Enter Your Message"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etMessage"
+                android:hint="Enter Your Message"
+                android:gravity="center"
+                android:singleLine="false"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <Button
+                android:onClick="doSend"
+                android:text="Send Your Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
